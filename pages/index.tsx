@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
 	return (
-		<div className="bg-slate-400 xl:place-content-center py-20 px-20 grid gap-10 lg:grid-cols-2 xl:grid-cols-3 min-h-screen">
+		<div className="bg-slate-400 xl:place-content-center py-20 px-20 grid gap-10 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 min-h-screen">
 			<div className="bg-white dark:bg-black flex flex-col justify-between  p-6 rounded-3xl shadow-xl">
 				<span className="font-semibold dark:text-white text-2xl">Select Item</span>
 				{/* <div className="flex justify-between my-2">
@@ -106,6 +106,11 @@ const Home: NextPage = () => {
 			<div className="bg-white overflow-hidden rounded-3xl shadow-xl">
 				<div className="flex flex-col space-y-2  p-5 ">
 					<p className="first-letter:text-7xl first-letter:hover:text-purple-400">Hello everyone!</p>
+				</div>
+			</div>
+			<div className="bg-white overflow-hidden rounded-3xl shadow-xl lg:col-span-2 xl:col-span-3">
+				<div className="dark:md:hover:bg-teal-400 bg-[url('/vercel.svg')]">
+					<h2 className="text-[97851px] text-[#000]">Hello</h2>
 				</div>
 			</div>
 		</div>
